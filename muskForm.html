@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Musk Inspections Home</title>
+      <link rel="shortcut icon" type="image/png" href="https://cdn.upload.systems/uploads/pUIvUMib.png"/>
+      <link href="style.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script></script>
+      <div class="header">
+      </div>
+      <div class="topnav">
+         <a class="active" href="#home">Home</a>
+         <a href="#sites" target="_blank">Sites</a>
+         <a href="#areas" target="_blank">Areas</a>
+         <a href="#engineers" target="_blank">Engineers</a>
+         <a href="#equipment" target="_blank">Equipment</a>
+         <a href="#equipment-status" target="_blank">Equipment Status</a>
+         <a href="#gas" target="_blank">Gas</a>
+         <a href="#boards" target="_blank">Boards</a>
+         <a href="#lights" target="_blank">Lights</a>
+         <a href="#email" target="_blank">E-Mail</a>
+         <a href="#users" target="_blank">Users</a>
+         <a href="#jobs" target="_blank">Jobs</a>
+         <a href="#log" target="_blank">Log</a>
+         <a href="#actions" target="_blank">Actions</a>
+         <a href="#breakdowns" target="_blank">Breakdowns</a>
+         <a href="#air-leaks" target="_blank">Air Leaks</a>
+         <a href="#steam" target="_blank">Steam</a>
+         <a href="#graphs" target="_blank">Graphs</a>
+         <a href="#library" target="_blank">Library</a>
+         <a href="#FRACAS" target="_blank">FRACAS</a>
+         <div class="search-container">
+            <form action="/action_page.php">
+               <input type="text" placeholder="Search..." name="search">
+               <button type="submit"><i class="fa fa-search"></i></button>
+               <a onclick="window.open('./muskLogin.html'); return false">Log Out</a>
+            </form>
+         </div>
+      </div>
+      <div class="subnav">
+         <a href="#new-inspection">New Site Inspection</a>
+         <a href="#inspections-list">Site Inspection List</a>
+         <a href="#inspections-actions-list">Inspections Action List</a>
+      </div>
+	  <p>&nbsp;&nbsp;</p>
+      <table class="inspTable">
+         <thead>
+            <tr>
+               <th>Date</th>
+               <th>Site</th>
+               <th>Area</th>
+               <th>Inspector</th>
+               <th>Entered By</th>
+               <th>Interventions</th>
+               <th>Outstanding?</th>
+               <th>Inspection</th>
+               <th>Attachment</th>
+            </tr>
+         </thead>
+         <tfoot>
+            <tr>
+               <td colspan="9">
+                  <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+               </td>
+            </tr>
+         </tfoot>
+         <tbody>
+            <tr>
+               <td>01/01/22</td>
+               <td>Tate and Lyle</td>
+               <td>Raw Sugar Shed</td>
+               <td>A Whyman</td>
+               <td>Anthony Whyman</td>
+               <td>2</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</a></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>02/01/22</td>
+               <td>Project Safety Audits</td>
+               <td>Britvic Rugby</td>
+               <td>R Morgan</td>
+               <td>Ryan Morgan</td>
+               <td>2</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>03/01/22</td>
+               <td>Weetabix Burton</td>
+               <td>AP2 </td>
+               <td>A Whyman</td>
+               <td>Anthony Whyman</td>
+               <td>1</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>04/01/22</td>
+               <td>Tate and Lyle</td>
+               <td>BLD 53</td>
+               <td>R Morgan</td>
+               <td>Ryan Morgan</td>
+               <td>2</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td><a href="#" target="_blank">VIEW</td>
+            </tr>
+            <tr>
+               <td>05/01/22</td>
+               <td>Tate and Lyle</td>
+               <td>BLD 53</td>
+               <td>L Cosgrove</td>
+               <td>Lewis Cosgrove</td>
+               <td>2</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>06/01/22</td>
+               <td>Weetabix Burton</td>
+               <td>AP6 Foyer</td>
+               <td>L Cosgrove</td>
+               <td>Lewis Cosgrove</td>
+               <td>1</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>07/01/22</td>
+               <td>Project Safety Audits</td>
+               <td>Kegging Deunitiser</td>
+               <td>M Polak</td>
+               <td>Michal Polak</td>
+               <td>3</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>08/01/22</td>
+               <td>Project Safety Audits</td>
+               <td>Britvic Rugby Line 7/8</td>
+               <td>M Polak</td>
+               <td>Michal Polak</td>
+               <td>3</td>
+               <td>YES</td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>09/01/22</td>
+               <td>Project Safety Audits</td>
+               <td>Britvic Rugby</td>
+               <td>J Cord</td>
+               <td>John Cord</td>
+               <td>3</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>10/01/22</td>
+               <td>Project Safety Audits</td>
+               <td>Britvic Rugby Line 7/8</td>
+               <td>T Callaghan</td>
+               <td>Tom Callaghan</td>
+               <td>1</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td><a href="#" target="_blank">VIEW</td>
+            </tr>
+            <tr>
+               <td>11/01/22</td>
+               <td>Weetabix Burton</td>
+               <td>AP6 First Aid</td>
+               <td>DW Sansom</td>
+               <td>David Sansom</td>
+               <td>1</td>
+               <td></td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td><a href="#" target="_blank">VIEW</td>
+            </tr>
+            <tr>
+               <td>12/01/22</td>
+               <td>Weetabix Burton</td>
+               <td>Rear of AP7</td>
+               <td>DW Sansom</td>
+               <td>David Sansom</td>
+               <td>1</td>
+               <td>YES</td>
+               <td><a href="#" target="_blank">VIEW</td>
+               <td></td>
+            </tr>
+         </tbody>
+         </tr>
+      </table>
+   </body>
+</html>

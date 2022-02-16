@@ -3,14 +3,14 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Musk Process Services Login</title>
-      <link rel="favicon" type="image/png" href="https://cdn.upload.systems/uploads/pUIvUMib.png"/>
+      <title>Musk Process Services Registration</title>
+      <link rel="icon" type="image/png" href="https://cdn.upload.systems/uploads/pUIvUMib.png"/>
       <style>
-         .loginPage {
-         padding: 20% 0 0; /* keeps login box in the center of the page */
+         .registrationPage {
+         padding: 20% 0 0; 
          margin: auto;
          }
-         .loginForm {
+         .registrationForm {
          position: relative;
          z-index: 1;
          background: #FFFFFF;
@@ -29,41 +29,24 @@
          box-sizing: border-box;
          font-size: 14px;
          }
-         .loginButton {
+         .registerButton, .returnButton{
          text-transform: uppercase;
-         outline: 0;
-         background: #1697dc;
-         width: 100%;
-         border: 0;
-         padding: 15px;
-         color: #FFFFFF;
-         font-size: 14px;
-		 font-weight: 600;
-         -webkit-transition: all 0.3 ease;
-         transition: all 0.3 ease;
-         cursor: pointer;
-         }
-         .loginButton:hover {
-         background: #0c6a9d;
-         }
-		 .registerButton{
-		 text-transform: uppercase;
          outline: 0;
          background: #1697dc;
          width: 60%;
          border: 0;
-		 margin-bottom: 15px;
+         margin-bottom: 15px;
          padding: 15px;
          color: #FFFFFF;
          font-size: 14px;
-		 font-weight: 600;
          -webkit-transition: all 0.3 ease;
          transition: all 0.3 ease;
          cursor: pointer;
-		 }
-		 .registerButton:hover{
-		 background: #0c6a9d;
-		 }
+         font-weight: 600;
+         }
+         .registerButton:hover, .returnButton:hover{
+         background: #0c6a9d;
+         }
          .container {
          position: relative;
          z-index: 1;
@@ -76,22 +59,29 @@
          body {
          background-image: url("https://cdn.upload.systems/uploads/AF6tFJMl.jpg");
          background-size: cover;
+         font-family: Arial;
          background-repeat: no-repeat;
          background-color: #37393e;
+         color: #69696a;
          }
       </style>
    </head>
    <body>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-      <div class="loginPage">
+      <div class="registrationPage">
          <div class="form">
-            <form class="loginForm">
+            <form class="registrationForm">
                <img src="https://www.peme.co.uk/wp-content/uploads/2019/03/MUSK-logo.png" style="width:100;height:60px;"/>
                <p>&nbsp;&nbsp;</p>
+               <h3>Register New User</h3>
+               <input type="text" placeholder="first name"/>
+               <input type="text" placeholder="surname"/>
                <input type="text" placeholder="username"/>
+               <input type="email" placeholder="email address"/>
                <input type="password" placeholder="password"/>
-			   <button type="submit" class="registerButton" onclick="window.open('./muskRegistration.html'); return false">Register New User</button>
-               <button type="submit" class="loginButton" onclick="window.open('./muskForm.html'); return false">Login</button>
+               <input type="password" placeholder="repeat password"/>
+               <button type="button" class="registerButton" onclick="window.open('./muskLogin.html'); return false">Register</button>
+               <button type="button" class="returnButton" onclick="window.open('./muskLogin.html'); return false">Cancel</button>
             </form>
          </div>
       </div>
